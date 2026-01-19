@@ -30,4 +30,32 @@ public class EncodeAndDecode {
         }
         return output;
     }
+
+    public String encodeAnotherApproach(List<String> strs) {
+        StringBuilder output = new StringBuilder();
+        for(String str : strs){
+            output.append(str.length()).append("#").append(str);
+        }
+
+        return output.toString();
+
+    }
+
+    public List<String> decodeAnotherApproach(String str) {
+        List<String> output = new ArrayList<>();
+        int i = 0;
+        int start, end;
+        while(i < str.length()){
+            int lengthOfString = Integer.parseInt(String.valueOf(str.charAt(i)));
+            start = i + 2;
+            end = start + lengthOfString;
+            output.add(str.substring(start,end));
+            i = end;
+        }
+        return output;
+    }
+
+    private int getLength(int start, int end){
+
+    }
 }
