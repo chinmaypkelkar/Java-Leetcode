@@ -27,6 +27,5 @@ public class MajorityOfElement {
             element = nums[i-1];
          }
         return element;
-        
     }
 }

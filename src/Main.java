@@ -1,4 +1,6 @@
 import Array.EncodeAndDecode;
+import Array.SearchMatrix;
+import SlidingWindow.MinSubArray;
 
 import java.util.List;
 
@@ -6,8 +8,7 @@ import java.util.List;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        EncodeAndDecode encodeAndDecode = new EncodeAndDecode();
-        String encodedString = encodeAndDecode.encodeAnotherApproach(List.of("we","say",":","yes","!@#$%^&*()"));
-        encodeAndDecode.decodeAnotherApproach(encodedString);
+        MinSubArray minSubArray = new MinSubArray();
+        minSubArray.minSubArrayLen(10, new int[]{2,1,5,1,5,3});
     }
 }

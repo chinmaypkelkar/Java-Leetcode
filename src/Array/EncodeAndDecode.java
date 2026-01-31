@@ -55,7 +55,5 @@ public class EncodeAndDecode {
         return output;
     }
 
-    private int getLength(int start, int end){
 
-    }
 }
